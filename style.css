@@ -1,0 +1,244 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700 !important;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.main_navbar {
+    background-color: #ffffff;
+    padding: 10px 40px; /* Adjusted padding */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    justify-content: space-between;
+    box-sizing: border-box; /* Include padding in the width calculation */
+    z-index: 2;
+}
+
+.left_navbar {
+    margin: 0 15px;
+    color: #bbbbbb;
+}
+
+.left_navbar h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700 !important;
+    font-size: 16px;
+
+    color: black;
+}
+
+.right_navbar a {
+    text-decoration: none;
+    color: #000000; /*     Text color for the button */
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700 !important;
+    font-size: 14px;
+
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    margin: 0 5px;
+
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.right_navbar a:hover{
+    color: #999999;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .2s;
+}
+
+section {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#about {
+    background-image: url("assets/bg.jpg");
+}
+
+#about div {
+    background-color: #ffffff;
+    color: rgb(82, 82, 82);
+    font-size: 30px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+
+    font-size: 16px;
+}
+
+#about h1 {
+    margin: 20px 0 10px 0;
+}
+
+#about p {
+    margin: 0px 10px;
+    font-weight: 500 !important;
+}
+
+#about #me_png {
+    max-width: 100%;
+    width: 264px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ebebeb;
+}
+
+#education img {
+    width: 200px;
+    height: 200px;
+
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+}
+
+#education img:hover {
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+
+#education .swb .ds {
+    display: inline-flex;
+}
+
+#certs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    background-color: #f8f8f8;
+}
+
+#certs div {
+    text-align: center;
+    max-width: 100%;
+}
+
+#certs div img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#certs div h1 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#skills h1 {
+    color: black;
+    z-index: 1;
+}
+
+#skills .skill_ranges {    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+
+    background-color: #ebebeb;
+}
+
+#skills div {
+    text-align: centerl;
+    max-width: 100%;
+}
+
+#skills div img {
+    max-width: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+#skills div h1 {
+    color: black;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#contacts {
+    justify-content: center;
+    align-items: center;
+}
+
+#contacts p {
+    margin: 0;
+    padding: 2.5px;
+}
+
+#contacts .media .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #eeeeee;
+}
+
+#contacts .media .fa:hover {
+    opacity: 0.7;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding: 5px 10px 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    font-family: monospace;
+    font-weight: 500 !important;
+    font-size: 12px;
+}
